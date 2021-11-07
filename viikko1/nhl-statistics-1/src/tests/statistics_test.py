@@ -19,7 +19,7 @@ class TestStatistics(unittest.TestCase):
             PlayerReaderStub()
         )
 
-    def loytaa_pelaajan(self):
+    def test_loytaa_pelaajan(self):
         pelaaja = self.statistics.search("Semenko")
 
         tulostus = str(pelaaja)
@@ -27,7 +27,7 @@ class TestStatistics(unittest.TestCase):
 
         self.assertEqual(tulostus, "Semenko EDM 4 + 12 = 16")
 
-    def palauttaa_oikein_jos_pelaajaa_ei_ole(self):
+    def test_palauttaa_oikein_jos_pelaajaa_ei_ole(self):
         pelaaja = self.statistics.search("Semmenko")
 
         self.assertEqual(pelaaja, None)
