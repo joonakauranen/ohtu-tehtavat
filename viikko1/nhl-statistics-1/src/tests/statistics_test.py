@@ -19,9 +19,15 @@ class TestStatistics(unittest.TestCase):
             PlayerReaderStub()
         )
 
-    def test_yksi_summa_oikein(self):
+    def loytaa_pelaajan(self):
         pelaaja = self.statistics.search("Semenko")
 
-        print(pelaaja)
+        tulostus = str(pelaaja)
 
-        #self.assertEqual()
+
+        self.assertEqual(tulostus, "Semenko EDM 4 + 12 = 16")
+
+    def palauttaa_oikein_jos_pelaajaa_ei_ole(self):
+        pelaaja = self.statistics.search("Semmenko")
+
+        self.assertEqual(pelaaja, None)
