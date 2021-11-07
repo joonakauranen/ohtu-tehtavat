@@ -31,3 +31,17 @@ class TestStatistics(unittest.TestCase):
         pelaaja = self.statistics.search("Semmenko")
 
         self.assertEqual(pelaaja, None)
+
+    def test_loytaa_listan_tiimin_mukaan(self):
+        joukkue = self.statistics.team("EDM")
+
+        onko = isinstance(joukkue, list)
+
+        self.assertEqual(onko, True)
+
+    def test_loytaa_top_scorer(self):
+        joukkue = self.statistics.top_scorers(1)
+
+        nimi = str(joukkue[0])
+
+        self.assertEqual(nimi, "Gretzky EDM 35 + 89 = 124")
