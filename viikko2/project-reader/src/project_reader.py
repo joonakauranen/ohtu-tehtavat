@@ -20,4 +20,4 @@ class ProjectReader:
         
 
         # deserialisoi TOML-formaatissa oleva merkkijono ja muodosta Project-olio sen tietojen perusteella
-        return Project(nimi, "", riippuvuudet, dev_riippuvuudet)
+        return Project(nimi, kuvaus, riippuvuudet, dev_riippuvuudet)
