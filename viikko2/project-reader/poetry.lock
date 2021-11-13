@@ -1,18 +1,18 @@
 [[package]]
-name = "pytoml"
-version = "0.1.21"
-description = "A parser for TOML-0.4.0"
+name = "toml"
+version = "0.10.2"
+description = "Python Library for Tom's Obvious, Minimal Language"
 category = "main"
 optional = false
-python-versions = "*"
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "bb4d45205dab3fd51d4dfe4086349b60a4dca1a57a021043965f82a8db9f0f36"
+content-hash = "80c60ddd29d0f003ff03a91b42eca2d8cdb938a0ff67f90207d9b65d3ec85a46"
 
 [metadata.files]
-pytoml = [
-    {file = "pytoml-0.1.21-py2.py3-none-any.whl", hash = "sha256:57a21e6347049f73bfb62011ff34cd72774c031b9828cb628a752225136dfc33"},
-    {file = "pytoml-0.1.21.tar.gz", hash = "sha256:8eecf7c8d0adcff3b375b09fe403407aa9b645c499e5ab8cac670ac4a35f61e7"},
+toml = [
+    {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
+    {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
 ]
