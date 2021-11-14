@@ -7,11 +7,14 @@ from viitegeneraattori import Viitegeneraattori
 
 
 def main():
-    kauppa = Kauppa(
-    Varasto.get_instance(),
-    Pankki.get_instance(),
-    Viitegeneraattori.get_instance()
-)
+
+
+    viitegeneraattori = Viitegeneraattori()
+    kirjanpito = Kirjanpito()
+    varasto = Varasto(kirjanpito)
+    pankki = Pankki(kirjanpito)
+    kauppa = Kauppa(varasto, pankki, viitegeneraattori)
+
 
 
     # kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
