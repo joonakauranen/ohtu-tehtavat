@@ -1,4 +1,5 @@
 from varasto import Varasto
+from kirjanpito import Kirjanpito
 from pankki import Pankki
 from ostoskori import Ostoskori
 from viitegeneraattori import Viitegeneraattori
