@@ -116,3 +116,12 @@ class TestOstoskori(unittest.TestCase):
         osto = osto.lukumaara()
 
         self.assertEqual(osto, 0)
+
+    def test_kori_tyhjenee(self):
+       
+        tupakka = Tuote("Tupakka", 10)
+        self.kori.lisaa_tuote(tupakka)
+        self.kori.tyhjenna()
+        osto = len(self.kori.ostokset_palauta())
+
+        self.assertEqual(osto, 0)
