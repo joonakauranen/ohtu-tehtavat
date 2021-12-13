@@ -26,6 +26,15 @@ class HasAtLeast:
 
         return player_value >= self._value
 
+class All:
+    def __init__(self, *matchers):
+        self._matchers = matchers
+    
+    def matches(self, player):
+        
+        
+        return True
+
 class HasFewerThan:
     def __init__(self, value, attr):
         self._value = value
